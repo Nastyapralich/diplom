@@ -1,3 +1,4 @@
+import { CardsArray } from "../../components/cardArray/cardsArray";
 import { SliderBlock } from "../../components/slider/slider";
 import style from "./mainPage.module.scss";
 import { Button } from "antd/es/radio";
@@ -24,7 +25,9 @@ export const MainPage = () => {
       <div className={style.sliderContainer}>
         <SliderBlock />
       </div>
-      
+      <div className={style.contentCatalog}>
+     <CardsArray  />
+      </div>
     </div>
   );
 };
