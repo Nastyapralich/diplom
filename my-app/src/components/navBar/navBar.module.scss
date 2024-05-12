@@ -1,0 +1,29 @@
+@import '../../components/fonts/fonts.scss';
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 200px;
+    padding: 5px 15px;
+    //  &:hover{
+    //     transition: 0.3s;
+    //    box-shadow: 3px 5px 3px rgb(221, 221, 231); 
+    //  }
+
+    .navBarItem {
+        cursor: pointer;
+        color: rgb(105, 104, 104);
+        margin-right: 20px;
+        font-size: 14px;
+        transition: 0.3s;
+        font-family:$fontPoppins;
+        &:hover{
+            transform: scale(1.1);
+            // padding-bottom: 15px;
+            border-bottom: 1px solid rgb(0, 0, 255);
+            transition: 0.3s;
+            color: rgb(0, 0, 255);
+        }
+
+    }
+}

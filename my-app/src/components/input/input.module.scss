@@ -1,0 +1,80 @@
+.container {
+    flex: 1;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+
+  .icon{
+    position: absolute;
+    top: 16px;
+    right: 30px;
+    font-size: 24px;
+    font-weight: 300;
+    color: rgb(210, 204, 204);
+  }
+  
+  .input {
+    padding: 20px 18px;
+    background-color: white;
+    border: 2px solid rgb(210, 204, 204);
+    border-radius: 10px;
+    outline: 0;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgb(210, 204, 204);
+    // margin-bottom: 24px;
+    &:hover,
+    &:focus {
+      color: white;
+    }
+    &:active {
+      border: 2px solid transparent;
+    }
+    &::placeholder {
+      color:  rgb(210, 204, 204);
+    }
+  }
+  .disabled {
+    pointer-events: none;
+    color: whitesmoke;
+    background-color: gray;
+  }
+  .title {
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  .errorText {
+    color: red;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 16px;
+  }
+  .errorInput {
+    border-color: red;
+  }
+  
+  .lightContainer {
+    .title {
+      color: black;
+    }
+    .input {
+      background-color: white;
+      color: black;
+      border: 2px solid blue;
+      &:hover,
+      &:focus {
+        border-color: blue;
+        color: white;
+      }
+    }
+  }
