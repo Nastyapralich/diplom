@@ -1,0 +1,59 @@
+@import '../../components/fonts/fonts.scss';
+
+.tabsContainer{
+    margin-top: 30px;
+    padding: 15px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: lightgrey;
+    border-radius: 10px;
+    margin-bottom: -10px;
+    // border: 1px solid lightblue;
+    .tab{
+        cursor: pointer;
+        font-family: $fontPoppins;
+        color: #666;
+        font-weight: 600;
+        font-size: 20px;
+       
+        &:hover{ 
+      
+            color: blue;
+            text-decoration: underline 1px solid blueviolet;
+        }
+    }
+    .active{
+        color: blue;
+    }
+
+}
+
+.item{
+    width: 800px;
+    display: flex;
+    align-items: center;
+    // justify-content: space-around;
+    text-align: left;
+    margin: 0 auto;
+    span{
+        width: 200px;
+        text-align: left;
+    }
+}
+
+.tabContent{
+
+    background-color: lightgrey;
+    margin-top: 0;
+    padding: 15px 30px;
+    width: 100%;
+
+}
+
+.delivery{
+
+    background-color: lightgrey;
+}
+

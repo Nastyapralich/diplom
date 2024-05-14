@@ -1,42 +1,216 @@
-.detailPageContainer{
-max-width: 1170px;
-margin: 0 auto;
-margin-top: 50px;
+@import "../../components/fonts/fonts.scss";
 
-.title{
+.detailPageContainer {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 30px;
 
-}
-.upper{
+  .title {
+  }
+  .upper {
     display: flex;
     // justify-content: space-between;
     padding: 20px;
-    .img{
-        width: 40%;
-        border: 1px solid rgb(212, 206, 206);
-        border-radius: 10px;
-        img{
-            width: 100%;
-            height: 300px;
-            object-fit: contain;
-        }
+    .img {
+      width: 40%;
+      border: 1px solid rgb(212, 206, 206);
+      border-radius: 10px;
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+      }
     }
-    .textContainer{
+    .textContainer {
+      flex: 1;
+      margin-left: 20px;
+      display: flex;
+      justify-content: space-between;
+      .mainFeatures {
+        width: 50%;
+        .mainFeatureItem {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          p {
+            font-family: $fontPoppins;
+            color: rgb(146, 136, 136);
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+      }
+      .info {
         flex: 1;
         margin-left: 20px;
-        display: flex;
-        justify-content: space-between;
-        .mainFeatures{
-            width: 50%;
-            .mainFeatureItem{
-                width: 100%;
-                display:flex ;
-                justify-content: space-between;
-            }
+        padding: 10px;
+        // border: 1px solid rgb(111, 111, 223);
+        box-shadow: inset 2px 2px 5px rgba(75, 84, 202, 0.5),
+          1px 1px 5px rgba(255, 255, 255, 1);
+        border-radius: 10px;
+        .infoCard {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          .infoUpper {
+            display: flex;
+            flex-direction: column;
+            .price {
+              width: 100%;
+              display: flex;
+              justify-content: space-evenly;
+              .newPrice {
+                font-family: $fontPoppins;
+                color: gray;
+                font-size: 22px;
+                margin: 0 0 8px;
+                font-weight: 600;
 
+                span {
+                  font-size: 14px;
+                }
+              }
+
+              .oldPrice {
+                display: flex;
+                gap: 20px;
+                font-family: $fontPoppins;
+                color: gray;
+                font-size: 22px;
+                text-decoration: line-through;
+                position: relative;
+                span {
+                  position: absolute;
+                  left: 40px;
+                  top: 10px;
+                  font-size: 14px;
+                }
+                .discount {
+                  position: absolute;
+                  color: blue;
+                  top: -10px;
+                  font-size: 16px;
+                  right: -40px;
+                  text-decoration: none;
+                }
+              }
+            }
+          }
         }
-        .info{
-            width: 200px
-        }
+      }
+    }
+  }
+}
+
+.btn {
+  margin-top: 30px;
+  font-family: $fontPoppins;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  align-self: stretch;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.infoDescription {
+  margin-top: 10px;
+  .descrItem {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    span {
+      font-family: $fontPoppins;
+      color: rgb(71, 70, 70);
+      font-weight: 500;
+    }
+  }
+}
+
+.onCloseModal {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: white;
+  right: 36%;
+  font-size: 24px;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover {
+    transition: 0.3s;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    color: black;
+  }
+}
+
+.btnModal{
+    cursor: pointer;
+    color: black;
+    &:hover{
+        color: blue($color: #000000);
     }
 }
+.modalContainer {
+  display: block;
+  margin-top: 40px;
+  font-family: $fontPoppins;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
 }
+
+.input{
+    width: 85%;
+    height: 40px;
+    border: none;
+    margin: 15px auto;
+    border-radius: 20px;
+    padding: 15px 10px;
+    outline: none;
+    font-size: 20px;
+    color: black;
+}
+
+.btnModal{
+    margin: 0 auto;
+    width: 60%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    font-family: $fontPoppins;
+    font-size: 20px;
+    color: gray;
+}
+
+.backToCatalog{
+    margin-top: 60px;
+    p{
+    font-family: $fontPoppins;
+    font-size: 20px;
+    color: gray;
+    cursor: pointer;
+    span{
+        &:hover{
+            color: blue;
+        }
+    }
+    }
+}
+
+.similar{
+    margin: 0 auto;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }

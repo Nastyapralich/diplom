@@ -1,0 +1,19 @@
+.star-rating {
+    margin-top: 15px;
+    font-size: 24px;
+  }
+  
+  .star {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .star svg {
+    transition: fill 0.2s;
+  }
+  
+  .star.filled svg {
+    fill: #FFD700;
+  }

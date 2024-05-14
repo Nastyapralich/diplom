@@ -10,6 +10,7 @@ import { NavBar } from "../navBar/navBar";
 import { Button } from "antd";
 import Input from "../input/input";
 import { RoutesList } from "../../pages/router";
+import { Footer } from "../footer/footer";
 
 export const Header = () => {
   const navigate = useNavigate();
@@ -63,6 +64,7 @@ export const Header = () => {
       </div>
 
       <Outlet />
+      <Footer />
     </div>
   );
 };
